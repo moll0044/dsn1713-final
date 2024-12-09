@@ -1,4 +1,138 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Alike&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+// Typography
+$font-family-sans-serif: 'Ubuntu', sans-serif;
+$headings-font-family: 'Alike', serif;
+
+// $h1-font-size: 1rem * 8;
+// $h2-font-size: 1rem * 2;
+// $h3-font-size: 1rem * 1.75;
+
+$line-height-base: 1.6;
+
 
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+
+
+
+// Colour
+.bg-body-tertiary {
+  background-color: #AFA682 !important;
+}
+
+.btn-success {
+  background-color: #AFA682 !important;
+}
+ 
+.btn-danger {
+  background-color: #5D1C34 !important;
+}
+
+.bg-body-success {
+  background-color: #EFE9E1 !important;
+}
+
+
+// Everything else
+.top-bar ul {
+    font-size: 0.9rem;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo {
+    max-width: 150px;
+  }
+
+.navtabs {
+    font-size: 0.9rem;
+}
+
+#newsletter1  {
+  font-size: 0.9rem;
+}
+
+#newsletter  {
+  font-size: 0.9rem;
+}
+
+#hero {
+    align-items: center;
+    background-image: url("../images/Image2.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    position: relative;
+  }
+
+  #hero::before {
+    background-color: rgba(0, 0, 0, 0.3);
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  
+  .image-cards-container img {
+    object-fit: cover; 
+    width: 100%;   
+    height: 100%;
+}
+
+#aboutdesigner img {
+  width: 100%; 
+  height: 500px;
+  object-fit: cover; 
+}
+
+#hijab img {
+  width: 100%; 
+  height: 500px;
+  object-fit: cover; 
+  object-position: top;
+}
+
+#navtabs {
+  margin-right: auto;
+}
+
+.customerfavorites {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.aboutdesigner {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+@media (max-width: 768px) {
+
+  .item1 { order: 2; }
+  .item2 { order: 1; }
+
+#filter {
+  display: flex;
+  flex-direction: column !important; /* Align items vertically */
+  gap: 0 !important; /* Optional: Add space between items */
+}
+
+}
+
+#clothing {
+  padding-bottom: 60px;
+}
+
+#account {
+  padding-bottom: 265px !important;
+}
